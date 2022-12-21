@@ -30,7 +30,8 @@
                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <!-- <a id="loginButton" data-toggle="modal" data-target="#loginModal"> -->
+                <a id="loginButton">
                     <span class="fa fa-sign-in"></span>Login
                 </a>
             </span>
@@ -94,7 +95,8 @@
                     
                     <!-- Start of Reserve Table Modal -->
 
-                    <button role="button" type="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reserveModal">
+                    <!-- <button role="button" type="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#reserveModal"> -->
+                    <button role="button" type="button" class="btn btn-block nav-link btn-warning" id="reserveButton">
                         Reserve Table
                     </button>
 
@@ -406,32 +408,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-
-    // Start of Carousel Jquery interval and buttons function.
-        $(document).ready(function (){
-            $('#mycarousel').carousel({interval: 2000});
-            $('#carouselButton').click(function(){
-                if($('#carouselButton').children('span').hasClass('fa-pause')){ //if span tag has the fa-pause class then we know that this button is the pause button.
-                    $('#mycarousel').carousel('pause');
-                    $('#carouselButton').children('span').removeClass('fa-pause');//removes fa-pause button
-                    $('#carouselButton').children('span').addClass('fa-play');//adds fa-play button
-                }
-                else if($('#carouselButton').children('span').hasClass('fa-play')){ //Doing the opposite, remove play to add pause button
-                    $('#mycarousel').carousel('cycle');//If you want the cycling behavior to resume you have to set the carousel action to cycle
-                    $('#carouselButton').children('span').removeClass('fa-play');
-                    $('#carouselButton').children('span').addClass('fa-pause');
-                }
-            });
-            // $('#carousel-play').click(function(){
-            //     $('#mycarousel').carousel('cycle');
-            // });
-        });
-    // End of Carousel Jquery interval and buttons function.
-    </script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

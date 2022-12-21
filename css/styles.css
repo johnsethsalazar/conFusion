@@ -52,3 +52,16 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.col-form-label, .form-check-label{
+  color: black
+}
+
+.modal-title, .close {
+  color: floralwhite; }
+
+.modal-header {
+  background: #512DA8; }
+
+.modal-body {
+  background-color: #D1C4E9; }
